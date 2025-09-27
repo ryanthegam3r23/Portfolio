@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}   <!-- Must be at the top, after extends -->
+
+{% block title %}About Me | Ryan's Portfolio{% endblock %}
+
+{% block content %}
+<section class="about-section">
+    <h1>About Me</h1>
+    
+    <div class="about-container">
+        <!-- Profile Image -->
+        <div class="profile-image">
+            <img src="{% static 'img/profile-placeholder.jpg' %}" alt="Ryan's Photo">
+        </div>
+
+        <!-- Intro / Bio -->
+        <div class="about-text">
+            <h2>Hello, I'm Ryan!</h2>
+            <p>I'm a passionate web developer specializing in Django, Python, and modern web technologies. I enjoy building projects that are both functional and visually appealing. My goal is to create clean, responsive, and user-friendly experiences that leave a positive impact.</p>
+            
+            <h3>My Skills</h3>
+            <ul class="skills-list">
+                <li>Django & Python</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>REST APIs & Databases</li>
+                <li>Responsive Web Design</li>
+            </ul>
+
+            <h3>Fun Facts</h3>
+            <p>When I'm not coding, I enjoy gaming, exploring new technologies, and sharing knowledge with others.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+

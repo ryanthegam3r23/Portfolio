@@ -1,0 +1,81 @@
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+}
+
+.about-section {
+    padding: 3em 2em;
+    background-color: #f7f7f7;
+}
+
+.about-section h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    flex: 0 0 220px; /* Fixed width for profile image */
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-image img:hover {
+    transform: scale(1.05);
+}
+
+.about-text {
+    flex: 1; /* Takes remaining space */
+    min-width: 300px; /* Prevent text from getting too narrow */
+    font-size: 1.1em;
+    line-height: 1.7em;
+    color: #555;
+}
+
+.about-text h2 {
+    margin-top: 0;
+    color: #222;
+}
+
+.about-text h3 {
+    margin-top: 1.5em;
+    color: #333;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.skills-list li {
+    background-color: #333;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 0.95em;
+}
+
+
+

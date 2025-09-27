@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Projects | Ryan's Portfolio{% endblock %}
+
+{% block content %}
+<section class="projects-section">
+    <h1>My Projects</h1>
+    <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="{% static 'img/project1.jpg' %}" alt="Project One">
+            </div>
+            <div class="project-info">
+                <h2>Coffee Blog</h2>
+                <div class="project-meta">
+                    <span><strong>Year:</strong> 2025</span>
+                    <span><strong>Skills:</strong>HTML, CSS</span>
+                    <span><strong>Repository:</strong> <a href="https://github.com/ryanthegam3r23/CoffeeBlogFinal" target="_blank">GitHub</a></span>
+                </div>
+                <p class="project-description">This is my first ever project built out of HTML and CSS it contains a lot of stuff about coffee</p>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="{% static 'img/project2.jpg' %}" alt="Project Two">
+            </div>
+            <div class="project-info">
+                <h2>Pet Shop</h2>
+                <div class="project-meta">
+                    <span><strong>Year:</strong> 2025</span>
+                    <span><strong>Skills:</strong> HTML, CSS</span>
+                    <span><strong>Repository:</strong> <a href="https://github.com/ryanthegam3r23/pet-salon-ch58-2" target="_blank">GitHub</a></span>
+                </div>
+                <p class="project-description">This project has a lot of stuff about a online pet shop with stuff like forms and css to make the page look better</p>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="{% static 'img/project3.jpg' %}" alt="Project Three">
+            </div>
+            <div class="project-info">
+                <h2>RealEstate</h2>
+                <div class="project-meta">
+                    <span><strong>Year:</strong> 2025</span>
+                    <span><strong>Skills:</strong>HTML, CSS</span>
+                    <span><strong>Repository:</strong> <a href="https://github.com/ryanthegam3r23/realEstate-ch58" target="_blank">GitHub</a></span>
+                </div>
+                <p class="project-description">This project includes stuff like pictures of houses and information on those houses and uses a lot of css for style</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

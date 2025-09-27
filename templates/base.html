@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Ryan's Portfolio{% endblock %}</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/projects.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about_me.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+
+
+    
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="{% url 'about_me' %}" class="nav-logo">Ryan Portfolio</a>
+        <ul class="nav-menu">
+            <li><a href="{% url 'about_me' %}">About Me</a></li>
+            <li><a href="{% url 'projects' %}">Projects</a></li>
+            <li><a href>Experience</a></li>
+            <li><a href>Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Main content block -->
+    <main>
+        {% block content %}
+        <!-- Each page will insert content here -->
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <p>&copy; {{ year }} Ryan Popock. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            <a href="mailto:your.email@example.com">Email</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
