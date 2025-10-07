@@ -1,0 +1,16 @@
+/* base.css */
+
+/* Reset / base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Reset main if needed */
+main {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,120 @@
+/* experience.css */
+
+/* Reset / base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Container */
+.experience-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.experience-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.experience-header h1 {
+  font-size: 2.4rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.experience-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Timeline styles */
+.timeline {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ccc;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-date {
+  position: absolute;
+  left: -5px;
+  top: 0;
+  width: 120px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.timeline-content h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.timeline-content h3 {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.timeline-content p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  .experience-header h1 {
+    font-size: 2rem;
+  }
+  .timeline-date {
+    width: 100px;
+    font-size: 0.8rem;
+  }
+  .timeline-content {
+    padding: 15px 20px;
+  }
+}
+

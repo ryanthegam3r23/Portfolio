@@ -1,11 +1,55 @@
 {% extends "base.html" %}
-{% load static %}   
+{% load static %}
 
-{% block title %}experience | Ryan's Portfolio{% endblock %}
+{% block title %}Experience | Ryan's Portfolio{% endblock %}
 
 {% block content %}
+<div class="experience-container">
 
+    <header class="experience-header">
+      <h1>Work Experience</h1>
+      <p>A timeline of my professional journey: roles, impact, and what I learned.</p>
+    </header>
 
-<h1>experience</h1>
+    <section class="timeline">
 
+      <!-- Experience Item 1 -->
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <span>Jan 2022 ‐ Present</span>
+        </div>
+        <div class="timeline-content">
+          <h2>Senior Web Developer</h2>
+          <h3>Awesome Tech Company</h3>
+          <p>Working on front‐end and UI/UX design, leading a small team of 3. Improved site performance by 30%, launched new responsive design, introduced new design system.</p>
+        </div>
+      </div>
+
+      <!-- Experience Item 2 -->
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <span>Jun 2019 ‐ Dec 2021</span>
+        </div>
+        <div class="timeline-content">
+          <h2>Web Developer</h2>
+          <h3>Startup XYZ</h3>
+          <p>Built features for customer portal, maintained backend APIs, improved test coverage, collaborated across teams to deploy features every sprint.</p>
+        </div>
+      </div>
+
+      <!-- Experience Item 3 -->
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <span>Aug 2017 ‐ May 2019</span>
+        </div>
+        <div class="timeline-content">
+          <h2>Junior Developer / Intern</h2>
+          <h3>Company ABC</h3>
+          <p>Assisted in building web apps, handled bug fixes, learned full stack basics, participated in code reviews and gained hands-on experience.</p>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
 {% endblock content %}
